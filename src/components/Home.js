@@ -1,13 +1,15 @@
-import React from 'react';
-import Article from './Article';
+import React, { Fragment } from "react";
+import Article from "./Article";
 
 export default function Home(props) {
   return (
-    <div className="lastet-article">
-      <Article />
-      <Article />
-      <Article />
-      <Article />
-    </div>
+    <Fragment>
+      <h1>Welcome to my blog !</h1>
+      <div className="lastet-article">
+        {props.lastestArticlie.map((article) => (
+          <Article article={article} />
+        ))}
+      </div>
+    </Fragment>
   );
 }

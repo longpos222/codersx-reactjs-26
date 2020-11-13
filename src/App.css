@@ -1,5 +1,24 @@
+#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Quicksand";
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.ant-card-meta-description {
+  height: 22px;
+}
+
+#root > section {
+  height: 100%;
+}
+
 .site-layout-content {
-  min-height: 280px;
+  min-height: 100%;
   padding: 24px;
   background: #fff;
 }
@@ -13,4 +32,53 @@
 .ant-row-rtl #components-layout-demo-top .logo {
   float: right;
   margin: 16px 0 16px 24px;
+}
+
+.all-article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ant-card {
+  margin: 30px;
+}
+
+.all-article > .ant-card {
+  max-height: 220px;
+  margin: 0 30px 30px 30px;
+}
+
+
+.all-article > .ant-card > .ant-card-cover > img {
+  height: 100px;
+  /* width: auto; */
+}
+.all-article .ant-card .ant-card-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  margin: 0 10px;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.about-me {
+  display: flex;
+  text-align: justify;
+}
+
+.about-me img {
+  width: 256px;
+  height: auto;
+  margin-right: 20px;
+}
+.lastet-article {
+  display: flex;
+  flex-wrap: wrap;
 }
